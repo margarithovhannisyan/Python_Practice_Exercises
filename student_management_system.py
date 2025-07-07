@@ -13,7 +13,7 @@ ERROR_MESSAGE = "Provided value is not a valid"
 full_name = input("Please provide student's full name")
 
 age = input("Please provide student's age")
-while not age.isdigit():
+while not age.isdigit() or not (16 <= int(age) < 100):
     print(ERROR_MESSAGE)
     age = input("Please provide student's age")
 else:
