@@ -1,7 +1,5 @@
 """
 homework 5
-● Initialize a Python project in PyCharm called Student Management System
-● Create a script called Homework5.py
 ● Create a script that gets the full name, age, and average grade of a student for the current year and
 average grade for the previous year.
 ● If the age of the student is less than 18, print the student’s name, age, and tell that he/she is a
