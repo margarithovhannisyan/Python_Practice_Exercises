@@ -22,7 +22,7 @@ def test_title_and_url(driver):
         actual_url = driver.current_url
 
         # Verify new URL
-        assert actual_url == expected_url, f"Expected '{expected_title}' but got '{actual_title} on {driver.name}"
+        assert actual_url == expected_url, f"Expected '{expected_url}' but got '{actual_url} on {driver.name}"
         print(f"Test Passed: URL matches on {driver.name}")
 
         driver.close()
