@@ -1,5 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
@@ -29,7 +28,6 @@ assert click_me_success_message == dynamic_click_message, f"Expected '{click_me_
 # Open a new Tab and click on Impressive radio button and Verify the result
 driver.switch_to.new_window("tab")
 driver.get("https://demoqa.com/radio-button")
-driver.switch_to.window(driver.window_handles[1])
 impressive_radio_button = driver.find_element(By.CSS_SELECTOR, "label[for='impressiveRadio']")
 impressive_radio_button.click()
 impressive_click_message = driver.find_element(By.XPATH, "//span[text()='Impressive']").text
